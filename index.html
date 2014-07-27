@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,9 +15,18 @@
         <!--[if IE 9]>     <html class="ie9"> <![endif]-->
         <!--[if !IE]><!--> <html>             <!--<![endif]-->
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/angular-csp.css">
+        <script type="text/javascript" src="js/angular.js"></script>
+
     </head>
     <body>
+
         <div class="wrapper">
+            <div>
+                <h1>{{hello}}</h1>
+                <input type="text" ng-model="hello">
+            </div>
+
             <div class="headerthing"> Box 1 </div>
             <div class="headerthing"> Box 2 </div>
             <div class="headerthing"> Box 3 </div>
